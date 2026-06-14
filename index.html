@@ -382,9 +382,10 @@
 .bxl-whatsapp-square {
   font-size: 50px;
   color: #25D366;
-  border-radius: 12px solid black; /* Smooths out the sharp corners */
-  padding: 10px;       /* Gives the icon space inside the border */
-  display: inline-block; /* Ensures padding and border calculate correctly */
+  border: 2px; /* Creates the actual line (adjust 2px to make it thicker/thinner) */
+  border-radius: 100px;     /* Smooths out the sharp corners of that line */
+  padding: 10px;           /* Gives the icon space inside the border */
+  display: inline-block;   /* Ensures padding and border calculate correctly */
 }
   </style>
 </head>
@@ -456,11 +457,11 @@
     },
     {
       id: 'chicken',
-      name: 'Royal Cleaned Chicken',
+      name: 'Royal Chicken',
       unit: 'whole chicken',
       price: 4500,
       icon: '🍗',
-      description: 'Fully dressed, quantity-based (per whole)',
+      description: 'quantity-based (per whole)',
       step: 1,
       decimalPlaces: 0,
       isWholeNumber: true
